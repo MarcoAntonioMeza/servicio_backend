@@ -6,7 +6,7 @@ class UsuarioSerializer(serializers.ModelSerializer):
     class Meta:
         model = Usuario
 
-        read_only = ('is_active',)
+        read_only_fields = ('is_active',)
         #fields =('__all__')
         exclude = (
                 "is_superuser",

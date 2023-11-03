@@ -23,7 +23,7 @@ class Servicio(models.Model):
 
 
     descripcion_cliente = models.TextField(null=True,verbose_name='Descripción del cleinte')
-
+    
 
     etapa = models.ForeignKey('Etapa' , on_delete=models.CASCADE)
 
@@ -31,6 +31,9 @@ class Servicio(models.Model):
 
     def __str__(self):
         return f'{self.folio}'
+
+
+
 
 
 
@@ -44,6 +47,9 @@ class Equipo(models.Model):
 
     def __str__(self):
         return f'Equipo {self.nombre}'
+    
+
+
     
 class Hallazgo(models.Model):
 
